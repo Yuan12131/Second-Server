@@ -26,7 +26,7 @@ response.writeHead(200, writeHeadObject)
 // -> 패킷통신 : 여러명에게 주니까 준 다음에 끊어버림 (<-> 회선통신), 요청이 올 때마다 연결&종료 반복
 
 // file system 모듈을 사용하여 미리 정적으로 만들어진 index.html 파일을 콜백함수로 읽어드린 것을 '응답 데이터'로 활용한 예시
-  fs.readFile("./vending_2.html", function(err, data){
+  fs.readFile("./230913_training.html", function(err, data){
     if (err){
       console.error("파일을 읽지 못했습니다.");
     } else {
